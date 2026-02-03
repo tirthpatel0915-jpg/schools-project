@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    /* Header with rainbow title */
+    header {
+      text-align: center;
+      padding: 30px 10px 10px 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    /* Facts container */
+    .facts-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Individual fact boxes */
+    .fact {
+      flex: 1 1 200px;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .fact h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+
+    .fact p {
+      font-weight: normal;
+    }
+
+    /* Different colors for each fact */
+    .fact:nth-child(1) { background-color: #1abc9c; }
+    .fact:nth-child(2) { background-color: #e74c3c; }
+    .fact:nth-child(3) { background-color: #9b59b6; }
+    .fact:nth-child(4) { background-color: #f1c40f; color: #000; }
+    .fact:nth-child(5) { background-color: #e67e22; }
+
+    /* Optional image section */
+    .project-image {
+      display: block;
+      margin: 30px auto;
+      width: 300px;
+      border-radius: 12px;
+      border: 2px solid #fff;
+    }
+
+    /* Responsive for mobile */
+    @media(max-width: 768px){
+      .facts-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>SCHOOL PROJECT</h1>
+  </header>
+
+  <!-- Facts -->
+<div class="facts-container">
+
+  <div class="fact">
+    <h2>#1 FACT</h2>
+    <p>Technology helps students learn faster and more effectively.</p>
+  </div>
+
+  <div class="fact">
+    <h2>#2 FACT</h2>
+    <p>Renewable energy helps protect the environment.</p>
+  </div>
+
+  <div class="fact">
+    <h2>#3 FACT</h2>
+    <p>Regular exercise improves physical and mental health.</p>
+  </div>
+
+  <div class="fact">
+    <h2>#4 FACT</h2>
+    <p>Reading books improves imagination and critical thinking.</p>
+  </div>
+
+  <div class="fact">
+    <h2>#5 FACT</h2>
+    <p>Teamwork teaches cooperation and responsibility.</p>
+  </div>
+  </div>
+
+  <!-- Example Image -->
+  <img src="hands.webp" alt="Colored Hands" class="project-image">
+
+</body>
+</html>
